@@ -13,18 +13,19 @@
 
 **创建集合**
 
-``` 
+``` kotlin
 listOf(1, 2, 3)
 mapOf(a to b, c to d)
 setOf(s)	//无序，只能存在一个null，不能存在重复数据
 items.filter{it%2==0} // 返回 [2,4]
-
 ```
 
 **集合扩展函数**
 
-```
-val items = listOf(1, 2, 3, 4)items.first() == 1items.last() == 4 items.filter{it%2==0}
+```kotlin
+val items = listOf(1, 2, 3, 4)
+items.first() == 1
+items.last() == 4 items.filter{it%2==0}
 items.filter{it%2==0} // 返回 [2,4]
 ```
 
@@ -36,7 +37,7 @@ items.filter{it%2==0} // 返回 [2,4]
 
 包内顶层声明扩展示例代码：
 
-```
+```kotlin
 package com.davdian.seller.extensions
 
 import android.content.Context
@@ -57,7 +58,7 @@ fun Context.dp2px(dp: Float): Int {
 
 类成员声明示例代码：
 
-```
+```kotlin
 class MainTabLayout : RelativeLayout {
 
     constructor(context: Context) : this(context, null)
@@ -78,7 +79,7 @@ class MainTabLayout : RelativeLayout {
 
 获取属性**YY**的值：
 
-```
+```kotlin
 //java 代码
 if(var!=null){
 	XX xx = var.getxx();
@@ -93,7 +94,7 @@ yy:YY=var?.getxx()?.getyy()
 
 如果需要给属性**YY**默认值：
 
-```
+```kotlin
 //java 代码
 YY yy=default;
 if(var!=null){
@@ -113,7 +114,7 @@ yy:YY=var?.getxx()?.getyy()?:default
 
 **消费者** *in* 限定下界，如:
 
-```
+```kotlin
 fun sort(to:List<String>,compator<in String>:Compator){
 	
 }
