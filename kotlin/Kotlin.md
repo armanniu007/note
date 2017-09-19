@@ -74,7 +74,10 @@ class MainTabLayout : RelativeLayout {
 }
 ```
 
+***注意***  扩展函数内的this代表调用者（.前的对象）
+
 ## 非空判断
+
 **?** 作为非空判断操作字符，**?:** 代表的意思是前置条件为为空
 
 获取属性**YY**的值：
@@ -121,4 +124,6 @@ fun sort(to:List<String>,compator<in String>:Compator){
 ```
 
 
+
+## 类和对象
 
